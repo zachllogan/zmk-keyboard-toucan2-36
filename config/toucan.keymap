@@ -249,4 +249,10 @@
             >;
         };
     };
+
+    input_processors {
+        &is_touching_processor {
+            bindings  = <&mo MOS>;
+        };
+    };
 };
