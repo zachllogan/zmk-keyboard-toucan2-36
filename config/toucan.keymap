@@ -131,7 +131,7 @@
         mm_n7_fslh:  mm_n7_fslh  { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N7>, <&kp FSLH>; mods = <(MOD_LSFT|MOD_RSFT)>; };
         mm_n8_star:  mm_n8_star  { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N8>, <&kp STAR>;  mods = <(MOD_LSFT|MOD_RSFT)>; };
         mm_n9_minus: mm_n9_minus { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N9>, <&kp MINUS>;  mods = <(MOD_LSFT|MOD_RSFT)>; };
-        mm_n4_bslh:  mm_n4_bslh  { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N4>, <&kp BLSH>;  mods = <(MOD_LSFT|MOD_RSFT)>; };
+        mm_n4_bslh:  mm_n4_bslh  { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N4>, <&kp BSLH>;  mods = <(MOD_LSFT|MOD_RSFT)>; };
         mm_n5_caret: mm_n5_caret { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N5>, <&kp CARET>;  mods = <(MOD_LSFT|MOD_RSFT)>; };
         mm_n6_plus:  mm_n6_plus  { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N6>, <&kp PLUS>; mods = <(MOD_LSFT|MOD_RSFT)>; };
         mm_n1_hash:  mm_n1_hash  { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp N1>, <&kp HASH>;  mods = <(MOD_LSFT|MOD_RSFT)>; };
