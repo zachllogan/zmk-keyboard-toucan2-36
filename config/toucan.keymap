@@ -212,7 +212,7 @@
         scrolling {
             display-name = "SCRL";
             bindings = <
-                &none &trans &trans         &msc MOVE_UP   &trans          &trans   &none    &none    &none     &none  &none       &none
+                &none &trans &trans         &msc SCRL_UP   &trans          &trans   &none    &none    &none     &none  &none       &none
                 &none &trans &msc SCRL_LEFT &msc SCRL_DOWN &msc SCRL_RIGHT &trans   &trans   &trans   &trans    &trans &trans      &none
                 &none &trans &trans         &trans         &trans          &trans   &none    &none    &none     &none  &none       &none
                                                                &trans &trans &trans &trans &trans &trans
