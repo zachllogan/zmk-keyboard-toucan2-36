@@ -17,8 +17,9 @@
 #define MOS   9
 
 &lt {
-    flavor = "hold-preferred";
-    retro-tap;
+    flavor = "balanced";
+    //flavor = "hold-preferred";
+    //retro-tap;
 }; 
 
 / {
