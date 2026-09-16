@@ -151,23 +151,15 @@
         bt_clr: bt_clr {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
-            bindings = <&macro_param_1to1>, <&bt BT_SEL MACRO_PLACEHOLDER>, <&bt BT_CLR>;
+            bindings = <&macro_param_1to2>, <&bt BT_SEL MACRO_PLACEHOLDER>, <&bt BT_CLR>;
         };
 
-        // Media Morphs
+        // BT Morphs
         mm_bt0:   mm_bt0   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&bt BT_SEL 0>, <&bt_clr 0>;          mods = <(MOD_LSFT|MOD_RSFT)>; };
         mm_bt1:   mm_bt1   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&bt BT_SEL 1>, <&bt_clr 1>;          mods = <(MOD_LSFT|MOD_RSFT)>; };
         mm_bt2:   mm_bt2   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&bt BT_SEL 2>, <&bt_clr 2>;          mods = <(MOD_LSFT|MOD_RSFT)>; };
         mm_bt3:   mm_bt3   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&bt BT_SEL 3>, <&bt_clr 3>;          mods = <(MOD_LSFT|MOD_RSFT)>; };
         mm_bt4:   mm_bt4   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&bt BT_SEL 4>, <&bt_clr 4>;          mods = <(MOD_LSFT|MOD_RSFT)>; };
-        mm_nxt:   mm_nxt   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp C_NEXT>, <&kp C_PREV>;           mods = <(MOD_LSFT|MOD_RSFT)>; };
-        mm_vol:   mm_vol   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp C_VOL_UP>, <&kp C_VOL_DN>;       mods = <(MOD_LSFT|MOD_RSFT)>; };
-        mm_br:    mm_br    { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp C_BRI_UP>, <&kp C_BRI_DN>;       mods = <(MOD_LSFT|MOD_RSFT)>; };
-        mm_val:   mm_val   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        mm_mod:   mm_mod   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&rgb_ug RGB_EFF>, <&rgb_ug RGB_EFR>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        mm_hue:   mm_hue   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&rgb_ug RGB_HUI>, <&rgb_ug RGB_HUD>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        mm_sat:   mm_sat   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&rgb_ug RGB_SAI>, <&rgb_ug RGB_SAD>; mods = <(MOD_LSFT|MOD_RSFT)>; };
-        
     };
     
     keymap {
@@ -256,10 +248,10 @@
         media {
             display-name = "MEDIA";
             bindings = <
-                &none &mm_val         &mm_sat      &mm_hue &mm_mod &mm_val            &none  &none  &none  &none  &none  &none
-                &none &rgb_ug RGB_TOG &out OUT_TOG &mm_br  &mm_vol &rgb_ug RGB_TOG    &kp LGUI &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &none
-                &none &mm_bt4         &mm_bt3      &mm_bt2 &mm_bt1 &mm_bt4            &none  &none  &none  &none  &none  &none
-                                                            &mm_bt0 &kp C_PP &mm_nxt &trans &trans &trans
+                &none &mm_bt3      &kp C_BRI_UP   &kp C_VOL_UP &mm_bt0 &mm_bt3          &none  &none  &none  &none  &none  &none
+                &none &mm_bt4      &kp C_BRI_DN   &kp C_VOL_DN &mm_bt1 &mm_bt4          &kp LGUI &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &none
+                &none &out OUT_TOG &kp C_SNAPSHOT &kp C_MUTE   &mm_bt2 &out OUT_TOG     &none  &none  &none  &none  &none  &none
+                                                         &kp C_PREV &kp C_PP &kp C_NEXT &trans &trans &trans
             >;
         };
 
