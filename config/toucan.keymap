@@ -54,20 +54,20 @@
             key-positions = <18 30>;
             bindings = <&kp RGUI>;
         };
-        combo_ralt {
+        combo_rshft {
             timeout-ms = <50>;
             key-positions = <19 31>;
-            bindings = <&kp RALT>;
+            bindings = <&kp RSHFT>;
         };
         combo_rctrl {
             timeout-ms = <50>;
             key-positions = <20 32>;
             bindings = <&kp RCTRL>;
         };
-        combo_rshft {
+        combo_ralt {
             timeout-ms = <50>;
             key-positions = <21 33>;
-            bindings = <&kp RSHFT>;
+            bindings = <&kp RALT>;
         };
         combo_rmeta_2 {
             timeout-ms = <50>;
@@ -144,6 +144,15 @@
         mm_dot_co:    mm_dot_co    { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp DOT>, <&kp COLON>;   mods = <(MOD_LSFT|MOD_RSFT)>; };
         mm_lpar_lt:   mm_lpar_lt   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp LPAR>, <&kp LT>; mods = <(MOD_LSFT|MOD_RSFT)>; };
         mm_rpar_gt:   mm_rpar_gt   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&kp RPAR>, <&kp GT>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+
+        // 
+
+        // Media Morphs
+        mm_bt0:   mm_bt0   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&bt BT_SEL 0>, <&kp SEMI>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        mm_bt1:   mm_bt1   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&bt BT_SEL 1>, <&kp SEMI>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        mm_bt2:   mm_bt2   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&bt BT_SEL 2>, <&kp COLON>;   mods = <(MOD_LSFT|MOD_RSFT)>; };
+        mm_bt3:   mm_bt3   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&bt BT_SEL 3>, <&kp LT>; mods = <(MOD_LSFT|MOD_RSFT)>; };
+        mm_bt4:   mm_bt4   { compatible = "zmk,behavior-mod-morph"; #binding-cells = <0>; bindings = <&bt BT_SEL 4>, <&kp GT>; mods = <(MOD_LSFT|MOD_RSFT)>; };
     };
     
     keymap {
