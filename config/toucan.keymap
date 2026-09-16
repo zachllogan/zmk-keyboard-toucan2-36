@@ -172,7 +172,7 @@
         compatible = "zmk,keymap";
 
         base {
-            display-name = "BASE";
+            display-name = "ENGRM";
             bindings = <
                 &none &kp B &kp Y &kp O &kp U &mm_sqt_lpar    &mm_dqt_rpar   &kp D  &kp N &kp G &kp V &none
                 &none &kp H &kp I &kp A &kp E &mm_com_sc      &mm_dot_co     &kp T  &kp R &kp S &kp C &none
@@ -182,7 +182,7 @@
         };
 
         qwerty {
-            display-name = "QWTY";
+            display-name = "QWRTY";
             bindings = <
                 &none &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &none
                 &none &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &none
@@ -222,7 +222,7 @@
         };
 
         movement {
-            display-name = "MOV";
+            display-name = "MOVE";
             bindings = <
                 &none &mkp MB4 &kp LC(Z)      &mmv MOVE_UP   &kp LC(Y)       &mkp MB4   &none    &none     &none     &none    &none    &none
                 &none &mo SCRL &mmv MOVE_LEFT &mmv MOVE_DOWN &mmv MOVE_RIGHT &mo SCRL   &kp LGUI &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &none
@@ -252,7 +252,7 @@
         };
 
         media {
-            display-name = "MED";
+            display-name = "MEDIA";
             bindings = <
                 &none &mm_val         &mm_sat      &mm_hue &mm_mod &mm_val            &none  &none  &none  &none  &none  &none
                 &none &rgb_ug RGB_TOG &out OUT_TOG &mm_br  &mm_vol &rgb_ug RGB_TOG    &kp LGUI &kp LSHFT &kp LCTRL &kp LALT &kp LGUI &none
@@ -262,7 +262,7 @@
         };
 
         mouse {
-            display-name = "MOS";
+            display-name = "MOUSE";
             bindings = <
                 &none &mkp MB4 &kp LC(Z) &kp LC(FSLH)  &kp LC(Y)  &mkp MB4   &none &none &none &none &none &none
                 &none &kp LGUI &kp LALT  &kp LCTRL     &kp LSHFT  &kp LGUI   &none &none &none &none &none &none
